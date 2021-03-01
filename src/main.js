@@ -13,8 +13,8 @@ let string = `
     /* 再准备一个div */
     #icon{
         border: 1px solid red;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
     /* 接下来我把 div 变成一个八卦图
     * 注意看好了
@@ -33,8 +33,8 @@ let string = `
     }
     /* 利用伪元素加两个神秘的小球 */
     #icon::before{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -43,8 +43,8 @@ let string = `
         background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
     }
     #icon::after{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -52,7 +52,13 @@ let string = `
         border-radius: 50%;
         background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);
     }
-    /* 完成了，前端真好玩 */
+    #icon {
+        animation: Rotate 5s infinite linear;
+    }
+    /* 太极写好了
+    * 还是会动的太极~~~
+    * 完成了，前端真好玩
+    **/
 `;
 let string2 = '';
 
